@@ -12,7 +12,7 @@ for (let input of inputs) { //percorrer inputs
 let form = document.getElementById('login-form');
 form.addEventListener("submit", function (event) {
 	for (let input of inputs) {
-		if (input.value.trim() != "") {
+		if (input.value.trim() == "") {
 			input.parentElement.classList.add("wrap-input-invalid");
 		} else {
 			input.parentElement.classList.remove("wrap-input-invalid");
