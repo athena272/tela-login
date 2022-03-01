@@ -11,6 +11,9 @@
     --white-color: #FFFFFF;
     --point-list: #CCCCCC;
     --line-input: #D9D9D9;
+
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5% /* 10px */
 }
 
 /*
@@ -75,41 +78,43 @@ button:hover {
 
 .text1 {
     font-family: Poppins-Regular;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: var(--text1);
     line-height: 1.5;
 }
 
 .text2 {
     font-family: Poppins-Regular;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: var(--main-color);
     line-height: 1.5;
 }
 
 .margin-bottom-35 {
-    margin-bottom: 35px;
+    margin-bottom: 3.5rem;
 }
 
 .margin-top-35 {
-    margin-top: 35px;
+    margin-top: 3.5rem;
 }
 
 .margin-bottom-8 {
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 }
 
 .margin-top-8 {
-    margin-top: 8px;
+    margin-top: 0.8rem;
 }
 
 .margin-left-50 {
-    margin-left: 50px;
+    margin-left: 5rem;
 }
 
 /*
     Login
-  */
+*/
+
+
 
 .container {
     width: 100%;
@@ -123,19 +128,19 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 1.5rem;
     background: var(--white-color);
 }
 
 .wrap-login {
-    width: 370px;
-    margin-right: 50px;
+    width: 37rem; /* 370px divido por 10*/
+    margin-right: 5rem; /* 50px divido por 10*/
     background: var(--white-color);
 }
 
 /*
     Formulário
-  */
+*/
 
 .login-form {
     width: 100%;
@@ -144,7 +149,7 @@ button:hover {
 .login-form-title {
     display: block;
     font-family: Poppins-Bold;
-    font-size: 39px;
+    font-size: 3.9rem;
     color: var(--highligth-text);
     line-height: 1.2;
     text-align: center;
@@ -157,19 +162,19 @@ button:hover {
 .wrap-input {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid var(--line-input);
+    border-bottom: 0.2rem solid var(--line-input);
 }
 
 .input-form {
     font-family: Poppins-SemiBold;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: var(--input-text);
     line-height: 1.2;
     display: block;
     width: 100%;
-    height: 52px;
+    height: 5.2rem;
     background: transparent;
-    padding: 0 5px;
+    padding: 0 0.5rem;
 }
 
 .focus-input-form {
@@ -186,32 +191,32 @@ button:hover {
     content: "";
     display: block;
     position: absolute;
-    bottom: -2px;
+    bottom: -0.2rem;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 0.2rem;
     transition: all 0.4s;
     background: var(--main-color);
 }
 
 .focus-input-form::after {
     font-family: Poppins-Medium;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: var(--text1);
     line-height: 1.2;
     content: attr(data-placeholder);
     display: block;
     width: 100%;
     position: absolute;
-    top: 15px;
-    left: 0px;
-    padding-left: 5px;
+    top: 1.5rem;
+    left: 0rem;
+    padding-left: 0.5rem;
     transition: all 0.4s;
 }
 
 .input-form:focus+.focus-input-form::after {
-    top: -20px;
-    font-size: 15px;
+    top: -2rem;
+    font-size: 1.5rem;
 }
 
 .input-form:focus+.focus-input-form::before {
@@ -219,8 +224,8 @@ button:hover {
 }
 
 .has-val.input-form+.focus-input-form::after {
-    top: -20px;
-    font-size: 15px;
+    top: -2rem;
+    font-size: 1.5rem;
 }
 
 .has-val.input-form+.focus-input-form::before {
@@ -239,18 +244,18 @@ button:hover {
 
 .login-form-btn {
     font-family: Poppins-Medium;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--white-color);
     line-height: 1.2;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2rem;
     width: 100%;
-    height: 50px;
+    height: 5rem;
     background-color: var(--main-color);
-    border-radius: 5px;
+    border-radius: 5rem;
     transition: all 0.4s;
 }
 
@@ -264,10 +269,10 @@ button:hover {
 
 a {
     font-family: Poppins-Regular;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.7;
     color: var(--link-color);
-    margin: 0px;
+    margin: 0rem;
     transition: all 0.4s;
 }
 
@@ -285,20 +290,20 @@ a:hover {
   */
 
 .login-utils {
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .login-utils li {
     position: relative;
-    padding-left: 16px;
+    padding-left: 1.6rem;
 }
 
 .login-utils li::before {
     content: "";
     display: block;
     position: absolute;
-    width: 5px;
-    height: 5px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
     background-color: var(--point-list);
     top: 45%;
