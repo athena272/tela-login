@@ -21,3 +21,4 @@ form.addEventListener("submit", function (event) {
 
 	event.preventDefault(); //Evento finalizado, sem que a pagina seja redirecionada 
 });
+
