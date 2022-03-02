@@ -41,7 +41,7 @@ async function requestLogin() {
 };
 
 /**
- * Open e Close Modal
+ * Open and Close Modal
  **/
 
 function openModal() {
