@@ -47,7 +47,6 @@ function openModal() {
 
 	let response = requestLogin();
 
-	// response.then((x) => console.log(x.result));
 	response.then((message) => {
 
 		document.getElementById('status').innerHTML = "Result: " + message.result
