@@ -3,9 +3,9 @@
 */
 
 :root {
-    --main-color: #548467;
+    --main-color: #4040a1;
     --link-color: #666666;
-    --text1: #999999;
+    --text1: #050404;
     --highligth-text: #333333;
     --input-text: #555555;
     --white-color: #FFFFFF;
@@ -18,24 +18,20 @@
   */
 
 @font-face {
-    font-family: Poppins-Regular;
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
+    font-family: LibreBaskerville-Bold;
+    src: url('../fonts/baskerville/LibreBaskerville-Bold.ttf');
 }
 
 @font-face {
-    font-family: Poppins-Medium;
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
+    font-family: LibreBaskerville-Italic;
+    src: url('../fonts/baskerville/LibreBaskerville-Italic.ttf');
 }
 
 @font-face {
-    font-family: Poppins-Bold;
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
+    font-family: LibreBaskerville-Regular;
+    src: url('../fonts/baskerville/LibreBaskerville-Regular.ttf');
 }
 
-@font-face {
-    font-family: Poppins-SemiBold;
-    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
-}
 
 /*
     Zerar estilos
@@ -50,7 +46,10 @@
 body,
 html {
     height: 100%;
-    font-family: Poppins-Regular, sans-serif;
+    font-family: LibreBaskerville-Bold, sans-serif;
+    background: url("images/green-background.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 ul,
@@ -69,19 +68,25 @@ button:hover {
     cursor: pointer;
 }
 
+.b-image {
+    background-size: cover;
+    opacity: 0.6;
+    position: absolute;
+}
+
 /*
     Utilitários
   */
 
 .text1 {
-    font-family: Poppins-Regular;
+    font-family: LibreBaskerville-Regular;
     font-size: 15px;
     color: var(--text1);
     line-height: 1.5;
 }
 
 .text2 {
-    font-family: Poppins-Regular;
+    font-family: LibreBaskerville-Regular;
     font-size: 15px;
     color: var(--main-color);
     line-height: 1.5;
@@ -143,11 +148,12 @@ button:hover {
 
 .login-form-title {
     display: block;
-    font-family: Poppins-Bold;
+    font-family: LibreBaskerville-Bold;
     font-size: 39px;
     color: var(--highligth-text);
     line-height: 1.2;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 /*
@@ -161,7 +167,7 @@ button:hover {
 }
 
 .input-form {
-    font-family: Poppins-SemiBold;
+    font-family: LibreBaskerville-Bold;
     font-size: 18px;
     color: var(--input-text);
     line-height: 1.2;
@@ -195,7 +201,7 @@ button:hover {
 }
 
 .focus-input-form::after {
-    font-family: Poppins-Medium;
+    font-family: LibreBaskerville-Italic;
     font-size: 18px;
     color: var(--text1);
     line-height: 1.2;
@@ -238,7 +244,7 @@ button:hover {
 }
 
 .login-form-btn {
-    font-family: Poppins-Medium;
+    font-family: LibreBaskerville-Italic;
     font-size: 16px;
     color: var(--white-color);
     line-height: 1.2;
@@ -252,6 +258,7 @@ button:hover {
     background-color: var(--main-color);
     border-radius: 5px;
     transition: all 0.4s;
+    position: relative;
 }
 
 .login-form-btn:hover {
@@ -263,8 +270,8 @@ button:hover {
   */
 
 a {
-    font-family: Poppins-Regular;
-    font-size: 14px;
+    font-family: LibreBaskerville-Regular;
+    font-size: 16px;
     line-height: 1.7;
     color: var(--link-color);
     margin: 0px;
