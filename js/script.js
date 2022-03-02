@@ -1,4 +1,5 @@
 var inputs = document.getElementsByClassName('input-form');
+
 for (let input of inputs) { //percorrer inputs
 	input.addEventListener("blur", function () {
 		if (input.value.trim() != "") {
@@ -52,8 +53,6 @@ function openModal() {
 		document.getElementById('status').innerHTML = "Result: " + message.result
 	
 	});
-
-	
 
 }
 
