@@ -21,16 +21,16 @@
                     </span>
 
                     <div class="wrap-input margin-top-35 margin-bottom-35">
-                        <input class="input-form" type="text" name="email" autocomplete="off">
-                        <span class="focus-input-form" data-placeholder="E-mail"></span>
+                        <input id="input-key" class="input-form" type="text" name="email" autocomplete="off">
+                        <span class="focus-input-form" data-placeholder="Key(Chave)"></span>
                     </div>
 
                     <div class="wrap-input margin-bottom-35">
-                        <input class="input-form" type="password" name="password">
-                        <span class="focus-input-form" data-placeholder="Senha"></span>
+                        <input id="input-token" class="input-form" type="password" name="password">
+                        <span class="focus-input-form" data-placeholder="Token"></span>
                     </div>
 
-                    <div class="container-login-form-btn" onclick="access()">
+                    <div class="container-login-form-btn" onclick="openModal()">
                         <button class="login-form-btn" type="submit">
                             Login
                         </button>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="modal-body">
                     <p id="status">
-                       
+
                     </p>
                 </div>
                 <div class="modal-footer">
