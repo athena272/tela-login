@@ -1,3 +1,6 @@
+/**
+ * Functionality to keep suspended data-placeholder
+ **/
 let inputs = document.getElementsByClassName('input-form');
 for (let input of inputs) {
 	input.addEventListener("blur", function () {
@@ -10,6 +13,9 @@ for (let input of inputs) {
 	});
 }
 
+/**
+ * Functionality responsible for the submit
+ **/
 let form = document.getElementById('login-form');
 form.addEventListener("submit", function (event) {
 	for (let input of inputs) {
@@ -23,12 +29,16 @@ form.addEventListener("submit", function (event) {
 	event.preventDefault(); //Evento finalizado, sem que a pagina seja redirecionada 
 });
 
-// Request para Login
+/**
+ * Functionality for Login Request
+ **/
 async function requestLogin() {
 
+	//get inputs
 	let inputKey = document.querySelector('#input-key').value;
 	let inputToken = document.querySelector('#input-token').value;
 
+	//get URL with 
 	let url = `https://cloud.softgreen.com.br/challenge/login_stage.jsp?token=${SHA1(inputToken)}&key=${SHA1(inputKey)}`;
 
 	const response = await fetch(url);
