@@ -264,6 +264,19 @@ button:hover {
     background-color: var(--highligth-text);
 }
 
+.close-btn {
+    font-family: Poppins-Medium;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 5rem;
+    transition: all 0.4s;
+}
+
+.close-btn:hover {
+    background-color: var(--highligth-text);
+}
+
 /*
     Links - Login utils
 */
@@ -321,7 +334,7 @@ a:hover {
     Modal
 */
 
-#container-modal {
+.container-modal {
     background-color: rgb(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
@@ -331,6 +344,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none
     
 }
 
@@ -347,7 +361,7 @@ a:hover {
 
 .modal-header, .modal-body, .modal-footer {
     padding: 0.1rem;
-    
+
 
 }
 
