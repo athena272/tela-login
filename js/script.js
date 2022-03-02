@@ -1,29 +1,4 @@
-var inputs = document.getElementsByClassName('input-form');
-for (let input of inputs) { //percorrer inputs
-	input.addEventListener("blur", function () {
-		if (input.value.trim() != "") {
-			input.classList.add("has-val");
-		} else {
-			input.classList.remove("has-val");
-		}
-	});
-}
-
-let form = document.getElementById('login-form');
-form.addEventListener("submit", function (event) {
-	for (let input of inputs) {
-		if (input.value.trim() == "") {
-			input.parentElement.classList.add("wrap-input-invalid");
-		} else {
-			input.parentElement.classList.remove("wrap-input-invalid");
-		}
-	}
-
-	event.preventDefault(); //Evento finalizado, sem que a pagina seja redirecionada 
-});
-
 // Request para Login
-
 function requestLogin() {
 	
 	let url = "https://cloud.softgreen.com.br/challenge/login_stage.jsp?token=0c4fb5956d00091319b39929e084b02e0056bf93&key=96de5543d183d7de52ac5fa21c46fc811f673f89"
