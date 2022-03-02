@@ -5,6 +5,7 @@ for (let input of inputs) {
 			input.classList.add("has-val");
 		} else {
 			input.classList.remove("has-val");
+			
 		}
 	});
 }
