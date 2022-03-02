@@ -1,5 +1,5 @@
 // Request para Login
-function requestLogin() {
+async function requestLogin() {
 	
 	let url = "https://cloud.softgreen.com.br/challenge/login_stage.jsp?token=0c4fb5956d00091319b39929e084b02e0056bf93&key=96de5543d183d7de52ac5fa21c46fc811f673f89"
 	
