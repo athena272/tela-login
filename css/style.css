@@ -3,6 +3,9 @@
 */
 
 :root {
+    /* 1rem = 16px (User Agent) = 100% (User Agent) */
+    font-size: 62.5%;/* 10px */
+
     --main-color: #548467;
     --link-color: #666666;
     --text1: #999999;
@@ -13,8 +16,7 @@
     --line-input: #D9D9D9;
     --invalid-acess: rgb(228, 7, 7);
 
-    /* 1rem = 16px (User Agent) = 100% (User Agent) */
-    font-size: 62.5% /* 10px */
+    
 }
 
 /*
@@ -368,6 +370,11 @@ a:hover {
 .modal-header {
     font-family: Poppins-Bold;
     background-color: #cccccc;
+}
+
+.modal-body {
+    font-family: Poppins-Bold;
+    padding: 4rem;
 }
 
 .modal-footer {
