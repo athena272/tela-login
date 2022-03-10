@@ -5,9 +5,9 @@
 	
 	return fetch(url).then(res => res.json()).then(output => {
 		
-		let response = JSON.stringify(output)
+		let response = JSON.stringify(output);
 
-		response = JSON.parse(response)[0]
+		response = JSON.parse(response)[0];
 		
 		return response;
 	})
@@ -27,7 +27,7 @@ function openModal() {
 	// response.then((x) => console.log(x.result));
 	response.then((x) => {
 
-		document.getElementById('status').innerHTML = "Result: " + x.result
+		document.getElementById('status').innerHTML = "Result: " + x.result;
 	
 	});
 
