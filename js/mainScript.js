@@ -67,7 +67,7 @@ function openModal() {
 
 	response.then((message) => {
 
-		document.getElementById('status').innerHTML = "Result: " + message.result
+		document.getElementById('status').innerHTML = "Result: " + message.result;
 
 	});
 
